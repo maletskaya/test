@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="36" started-at="2015-07-27T17:53:36Z" finished-at="2015-07-27T17:53:36Z">
+    <groups>
+    </groups>
+    <test name="Nopackage" duration-ms="36" started-at="2015-07-27T17:53:36Z" finished-at="2015-07-27T17:53:36Z">
+      <class name="lesson6.Lesson6">
+        <test-method status="PASS" signature="seleniumSearchTest()[pri:0, instance:lesson6.Lesson6@7a03411a]" name="seleniumSearchTest" duration-ms="16" started-at="2015-07-27T20:53:36Z" finished-at="2015-07-27T20:53:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seleniumSearchTest -->
+      </class> <!-- lesson6.Lesson6 -->
+    </test> <!-- Nopackage -->
+  </suite> <!-- Suite1 -->
+</testng-results>
