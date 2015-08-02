@@ -29,7 +29,7 @@ public class StylusSearchTest extends TestBase {
         onStylusSearchPage.setFilterFromfield(filterFrom);
         onStylusSearchPage.setFilterTofield(filterTo);
         onStylusSearchPage.clickButtonOK();
-       // assertTrue(clickButtonOK.getText().contains("Apple iPhone 6 128GB Space Gray")); ?????
+       // assertTrue(?????.getText().contains("Apple iPhone 6 128GB Space Gray")); ?????
     }
 
 }
