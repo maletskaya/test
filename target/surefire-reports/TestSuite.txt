@@ -1,4 +1,41 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.512 sec - in TestSuite
+Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 42.908 sec <<< FAILURE! - in TestSuite
+seleniumSearchTest(ui_tests.lesson7.GoogleSearchTest)  Time elapsed: 0.032 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at page.GoogleSearchPage.open(GoogleSearchPage.java:24)
+	at ui_tests.lesson7.GoogleSearchTest.seleniumSearchTest(GoogleSearchTest.java:19)
+
+seleniumSearchTest(ui_tests.lesson7.StylusSearchTest)  Time elapsed: 30.078 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 30.04 seconds
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'MacBook-Air-Yana.local', ip: '192.168.0.19', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.9.5', java.version: '1.6.0_65'
+Session ID: ccf14608-63d0-bf4b-ad72-4c873c5ea0ba
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=40.0.2, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:306)
+	at page.StylusSearchPage.open(StylusSearchPage.java:30)
+	at ui_tests.lesson7.StylusSearchTest.seleniumSearchTest(StylusSearchTest.java:26)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'MacBook-Air-Yana.local', ip: '192.168.0.19', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.9.5', java.version: '1.6.0_65'
+Driver info: driver.version: unknown
+	at <anonymous class>.Utils.initWebLoadingListener/<(file:///var/folders/8h/yjxltj6j6kx7zbpg7n8gsqd40000gn/T/anonymous3320759217997779774webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:8626)
+	at <anonymous class>.WebLoadingListener/e(file:///var/folders/8h/yjxltj6j6kx7zbpg7n8gsqd40000gn/T/anonymous3320759217997779774webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4735)
+	at <anonymous class>.WebLoadingListener/<(file:///var/folders/8h/yjxltj6j6kx7zbpg7n8gsqd40000gn/T/anonymous3320759217997779774webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4743)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///var/folders/8h/yjxltj6j6kx7zbpg7n8gsqd40000gn/T/anonymous3320759217997779774webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+
+JavaScriptClick(ui_tests.lesson7.Lesson10)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at page.JavaScriptPage.<init>(JavaScriptPage.java:19)
+	at ui_tests.lesson7.Lesson10.JavaScriptClick(Lesson10.java:17)
+

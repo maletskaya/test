@@ -33,7 +33,7 @@ public class StylusSearchTest extends TestBase {
         onStylusSearchPage.setFilterTofield(filterTo);
         onStylusSearchPage.clickButtonOK();
         finaltext = driver.findElement(By.xpath("//*[@id='product-block']/header/div[1]/h1"));
-        assertTrue(finaltext.getText().contains("Смартфон Apple iPhone 6 128GB Space Gray"), "Apple is not found" );
+        assertTrue(finaltext.getText().contains("Apple iPhone 6 128GB Space Gray"), "Apple is not found" );
     }
 
 }

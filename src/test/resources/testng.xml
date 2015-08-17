@@ -1,9 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Suite1" verbose="1" >
-    <test name="Nopackage" >
-        <classes>
-            <class name="ui_tests.lesson6.Lesson6" />
+<test name="Nopackage" >
+    <classes>
+        <class name="ui_tests.lesson7.GoogleSearchTest" />
+        <class name="ui_tests.lesson7.StylusSearchTest" />
         </classes>
-    </test>
+</test>
 </suite>

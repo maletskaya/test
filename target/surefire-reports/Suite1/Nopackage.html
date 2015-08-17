@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Nopackage</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jul 27 20:53:36 EEST 2015</td>
+<td>Started on:</td><td>Sun Aug 16 16:20:31 EEST 2015</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (36 ms)</td>
+<tr><td>Total time:</td><td>30 seconds (30149 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,18 +67,170 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='lesson6.Lesson6.seleniumSearchTest()'><b>seleniumSearchTest</b><br>Test class: lesson6.Lesson6</td>
-<td></td>
+<td title='ui_tests.lesson7.Lesson10.JavaScriptClick()'><b>JavaScriptClick</b><br>Test class: ui_tests.lesson7.Lesson10</td>
+<td><div><pre>java.lang.NullPointerException
+	at page.JavaScriptPage.&lt;init&gt;(JavaScriptPage.java:19)
+	at ui_tests.lesson7.Lesson10.JavaScriptClick(Lesson10.java:17)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace709926392", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace709926392'><pre>java.lang.NullPointerException
+	at page.JavaScriptPage.&lt;init&gt;(JavaScriptPage.java:19)
+	at ui_tests.lesson7.Lesson10.JavaScriptClick(Lesson10.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:696)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:882)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1189)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
 <td>0</td>
-<td>lesson6.Lesson6@7a03411a</td></tr>
+<td>ui_tests.lesson7.Lesson10@48ff2413</td></tr>
+<tr>
+<td title='ui_tests.lesson7.GoogleSearchTest.seleniumSearchTest()'><b>seleniumSearchTest</b><br>Test class: ui_tests.lesson7.GoogleSearchTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at page.GoogleSearchPage.open(GoogleSearchPage.java:24)
+	at ui_tests.lesson7.GoogleSearchTest.seleniumSearchTest(GoogleSearchTest.java:19)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace768673839", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace768673839'><pre>java.lang.NullPointerException
+	at page.GoogleSearchPage.open(GoogleSearchPage.java:24)
+	at ui_tests.lesson7.GoogleSearchTest.seleniumSearchTest(GoogleSearchTest.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:696)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:882)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1189)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>ui_tests.lesson7.GoogleSearchTest@669980d5</td></tr>
+<tr>
+<td title='ui_tests.lesson7.StylusSearchTest.seleniumSearchTest()'><b>seleniumSearchTest</b><br>Test class: ui_tests.lesson7.StylusSearchTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 30.04 seconds
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;MacBook-Air-Yana.local&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: ccf14608-63d0-bf4b-ad72-4c873c5ea0ba
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=40.0.2, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:306)
+	at page.StylusSearchPage.open(StylusSearchPage.java:30)
+	at ui_tests.lesson7.StylusSearchTest.seleniumSearchTest(StylusSearchTest.java:26)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;MacBook-Air-Yana.local&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.Utils.initWebLoadingListener/&lt;(file:///var/folders/8h/yjxltj6j6kx7zbpg7n8gsqd40000gn/T/anonymous3320759217997779774webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:8626)
+	at &lt;anonymous class&gt;.WebLoadingListener/e(file:///var/folders/8h/yjxltj6j6kx7zbpg7n8gsqd40000gn/T/anonymous3320759217997779774webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4735)
+	at &lt;anonymous class&gt;.WebLoadingListener/&lt;(file:///var/folders/8h/yjxltj6j6kx7zbpg7n8gsqd40000gn/T/anonymous3320759217997779774webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4743)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///var/folders/8h/yjxltj6j6kx7zbpg7n8gsqd40000gn/T/anonymous3320759217997779774webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace688788755", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace688788755'><pre>org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 30.04 seconds
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;MacBook-Air-Yana.local&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: ccf14608-63d0-bf4b-ad72-4c873c5ea0ba
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=40.0.2, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:306)
+	at page.StylusSearchPage.open(StylusSearchPage.java:30)
+	at ui_tests.lesson7.StylusSearchTest.seleniumSearchTest(StylusSearchTest.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:696)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:882)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1189)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:293)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;MacBook-Air-Yana.local&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.Utils.initWebLoadingListener/&lt;(file:///var/folders/8h/yjxltj6j6kx7zbpg7n8gsqd40000gn/T/anonymous3320759217997779774webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:8626)
+	at &lt;anonymous class&gt;.WebLoadingListener/e(file:///var/folders/8h/yjxltj6j6kx7zbpg7n8gsqd40000gn/T/anonymous3320759217997779774webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4735)
+	at &lt;anonymous class&gt;.WebLoadingListener/&lt;(file:///var/folders/8h/yjxltj6j6kx7zbpg7n8gsqd40000gn/T/anonymous3320759217997779774webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4743)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///var/folders/8h/yjxltj6j6kx7zbpg7n8gsqd40000gn/T/anonymous3320759217997779774webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+</pre></div></td>
+<td>30</td>
+<td>ui_tests.lesson7.StylusSearchTest@518bf072</td></tr>
 </table><p>
 </body>
 </html>

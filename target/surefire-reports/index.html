@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite1">
-              <span class="suite-name border-passed">Suite1</span>
+              <span class="suite-name border-failed">Suite1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,21 +90,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods, 3 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite1" class="hide-methods passed suite-Suite1"> (hide)</a> <!-- hide-methods passed suite-Suite1 -->
-                      <a href="#" panel-name="suite-Suite1" class="show-methods passed suite-Suite1"> (show)</a> <!-- show-methods passed suite-Suite1 -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite1" class="hide-methods failed suite-Suite1"> (hide)</a> <!-- hide-methods failed suite-Suite1 -->
+                      <a href="#" panel-name="suite-Suite1" class="show-methods failed suite-Suite1"> (show)</a> <!-- show-methods failed suite-Suite1 -->
                     </span>
-                    <div class="method-list-content passed suite-Suite1">
+                    <div class="method-list-content failed suite-Suite1">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="lesson6.Lesson6" hash-for-method="seleniumSearchTest">seleniumSearchTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="ui_tests.lesson7.Lesson10" hash-for-method="JavaScriptClick">JavaScriptClick</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite1 -->
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="ui_tests.lesson7.StylusSearchTest" hash-for-method="seleniumSearchTest">seleniumSearchTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="ui_tests.lesson7.GoogleSearchTest" hash-for-method="seleniumSearchTest">seleniumSearchTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite1 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,10 +126,10 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite1" class="panel Suite1">
-          <div class="suite-Suite1-class-passed">
+          <div class="suite-Suite1-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">lesson6.Lesson6</span>
+              <img src="failed.png"/>
+              <span class="class-name">ui_tests.lesson7.StylusSearchTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -127,10 +137,73 @@
                   <a name="seleniumSearchTest">
                   </a> <!-- seleniumSearchTest -->
                   <span class="method-name">seleniumSearchTest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Command duration or timeout: 30.04 seconds
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;MacBook-Air-Yana.local&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: ccf14608-63d0-bf4b-ad72-4c873c5ea0ba
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=40.0.2, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:306)
+	at page.StylusSearchPage.open(StylusSearchPage.java:30)
+	at ui_tests.lesson7.StylusSearchTest.seleniumSearchTest(StylusSearchTest.java:26)
+Caused by: org.openqa.selenium.TimeoutException: Timed out waiting for page load.
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;MacBook-Air-Yana.local&apos;, ip: &apos;192.168.0.19&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.Utils.initWebLoadingListener/&lt;(file:///var/folders/8h/yjxltj6j6kx7zbpg7n8gsqd40000gn/T/anonymous3320759217997779774webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:8626)
+	at &lt;anonymous class&gt;.WebLoadingListener/e(file:///var/folders/8h/yjxltj6j6kx7zbpg7n8gsqd40000gn/T/anonymous3320759217997779774webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4735)
+	at &lt;anonymous class&gt;.WebLoadingListener/&lt;(file:///var/folders/8h/yjxltj6j6kx7zbpg7n8gsqd40000gn/T/anonymous3320759217997779774webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:4743)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///var/folders/8h/yjxltj6j6kx7zbpg7n8gsqd40000gn/T/anonymous3320759217997779774webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite1-class-passed -->
+          </div> <!-- suite-Suite1-class-failed -->
+          <div class="suite-Suite1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">ui_tests.lesson7.Lesson10</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="JavaScriptClick">
+                  </a> <!-- JavaScriptClick -->
+                  <span class="method-name">JavaScriptClick</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at page.JavaScriptPage.&lt;init&gt;(JavaScriptPage.java:19)
+	at ui_tests.lesson7.Lesson10.JavaScriptClick(Lesson10.java:17)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-failed -->
+          <div class="suite-Suite1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">ui_tests.lesson7.GoogleSearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="seleniumSearchTest">
+                  </a> <!-- seleniumSearchTest -->
+                  <span class="method-name">seleniumSearchTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at page.GoogleSearchPage.open(GoogleSearchPage.java:24)
+	at ui_tests.lesson7.GoogleSearchTest.seleniumSearchTest(GoogleSearchTest.java:19)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-failed -->
         </div> <!-- panel Suite1 -->
         <div panel-name="test-xml-Suite1" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -143,7 +216,9 @@
 &lt;suite verbose=&quot;0&quot; name=&quot;Suite1&quot;&gt;
   &lt;test name=&quot;Nopackage&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;lesson6.Lesson6&quot;/&gt;
+      &lt;class name=&quot;ui_tests.lesson7.GoogleSearchTest&quot;/&gt;
+      &lt;class name=&quot;ui_tests.lesson7.StylusSearchTest&quot;/&gt;
+      &lt;class name=&quot;ui_tests.lesson7.Lesson10&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Nopackage --&gt;
 &lt;/suite&gt; &lt;!-- Suite1 --&gt;
@@ -157,7 +232,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Nopackage (1 class)</span>
+                <span class="test-name">Nopackage (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -183,16 +258,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'seleniumSearchTest')
-data.setCell(0, 2, 'lesson6.Lesson6')
-data.setCell(0, 3, 16);
+data.setCell(0, 2, 'ui_tests.lesson7.StylusSearchTest')
+data.setCell(0, 3, 30065);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'seleniumSearchTest')
+data.setCell(1, 2, 'ui_tests.lesson7.GoogleSearchTest')
+data.setCell(1, 3, 3);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'JavaScriptClick')
+data.setCell(2, 2, 'ui_tests.lesson7.Lesson10')
+data.setCell(2, 3, 2);
 window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 ms</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-Suite1">
               </div> <!-- times-div-Suite1 -->
             </div> <!-- times-div -->
@@ -207,9 +290,27 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">ui_tests.lesson7.Lesson10</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">ui_tests.lesson7.GoogleSearchTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite1" class="panel">
@@ -218,11 +319,45 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">lesson6.Lesson6</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">seleniumSearchTest</span>
+              <div class="chronological-class-name">ui_tests.lesson7.StylusSearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ui_tests.lesson7.GoogleSearchTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">seleniumSearchTest</span>
+                <span class="method-start">10608 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ui_tests.lesson7.StylusSearchTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">seleniumSearchTest</span>
+                <span class="method-start">10644 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ui_tests.lesson7.Lesson10</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">JavaScriptClick</span>
+                <span class="method-start">40726 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ui_tests.lesson7.StylusSearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">40890 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
