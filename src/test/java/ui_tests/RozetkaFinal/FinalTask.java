@@ -1,11 +1,12 @@
 package ui_tests.RozetkaFinal;
 
 import AssetPageLaptop.AssertLaptopPage1;
-import AssetPageLaptop.AssertListOf9;
+import AssetPageLaptop.AssertRozetkaManufactures;
 import core.TestBase;
 import org.testng.annotations.Test;
-import page.RozetkaAssertPage9;
+import page.RozetkaApplePage;
 import page.RozetkaLaptops;
+import page.RozetkaManufactures;
 import page.RozetkaOpenPage;
 
 import static org.testng.AssertJUnit.assertEquals;
@@ -23,8 +24,9 @@ public class FinalTask extends TestBase {
         RozetkaOpenPage onRozetkaPage = new RozetkaOpenPage(driver);
         RozetkaLaptops laptopTabs = new RozetkaLaptops(driver);
         AssertLaptopPage1 assertLaptop = new AssertLaptopPage1(driver);
-        RozetkaAssertPage9 listof9 = new RozetkaAssertPage9(driver);
-        AssertListOf9 manufact = new AssertListOf9(driver);
+        RozetkaManufactures manufactures = new RozetkaManufactures(driver);
+        AssertRozetkaManufactures manuf = new AssertRozetkaManufactures(driver);
+        RozetkaApplePage listDisplayed = new RozetkaApplePage(driver);
 
 
 
@@ -40,13 +42,20 @@ public class FinalTask extends TestBase {
         assertLaptop.assertNoteBoklist(laptopTabs);    //5
         laptopTabs.buttonClick();  //6
 
-        listof9.getlistOf9();//7
-        manufact.assertManufacturesDisplayed(listof9); //7
-        listof9.buttonClick1();  //6
 
-        //assertTrue(driver.getCurrentUrl().contains("notebooks/apple")); //7
+        manufactures.listOfManufactures();//7
+        manuf.assetManufactures(manufactures); //7
 
-         listof9.lowToHigh();
+        listDisplayed.apple(); //6
+
+        listDisplayed.applePageIs(); //7
+
+        listDisplayed.fromChipToExpClick(); //8
+
+        listDisplayed.appleRetina13Select();
+
+
+
 
 
 
