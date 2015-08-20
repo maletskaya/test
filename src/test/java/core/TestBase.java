@@ -2,7 +2,6 @@ package core;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import ui_tests.TestData;
 
@@ -40,10 +39,10 @@ public class TestBase {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
-    @AfterSuite
-    public void tearDown() {
-        driver.quit();
-    }
+  //  @AfterSuite
+   // public void tearDown() {
+       // driver.quit();
+   // }
 }
 
 

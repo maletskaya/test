@@ -1,5 +1,6 @@
 package page;
 
+import core.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,13 +11,12 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by yanamiletskaya on 16.08.15.
  */
-public class RozetkaLaptops {
+public class RozetkaLaptops extends TestBase{
     private WebElement laptopsTabs;
-    private WebDriver driver;
     private WebElement buttonClick;
 
-    public RozetkaLaptops(WebDriver driver) {
-        this.driver = driver;
+    public RozetkaLaptops(WebDriver driver){
+        this.driver=driver;
 
     }
 

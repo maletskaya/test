@@ -4,10 +4,7 @@ import AssetPageLaptop.AssertLaptopPage1;
 import AssetPageLaptop.AssertRozetkaManufactures;
 import core.TestBase;
 import org.testng.annotations.Test;
-import page.RozetkaApplePage;
-import page.RozetkaLaptops;
-import page.RozetkaManufactures;
-import page.RozetkaOpenPage;
+import page.*;
 
 import static org.testng.AssertJUnit.assertEquals;
 
@@ -27,9 +24,7 @@ public class FinalTask extends TestBase {
         RozetkaManufactures manufactures = new RozetkaManufactures(driver);
         AssertRozetkaManufactures manuf = new AssertRozetkaManufactures(driver);
         RozetkaApplePage listDisplayed = new RozetkaApplePage(driver);
-
-
-
+        RozetkaComparePage elementsExist = new RozetkaComparePage(driver);
 
 
         onRozetkaPage.open(rozetkaPage); //1
@@ -52,12 +47,22 @@ public class FinalTask extends TestBase {
 
         listDisplayed.fromChipToExpClick(); //8
 
-        listDisplayed.appleRetina13Select();
+        listDisplayed.getAppleRetina13(); //9
 
+        listDisplayed.addToCompare13(); //10  dodelat xpath
+        listDisplayed.listContainsAppl13(); //11
 
+        listDisplayed.getAppleRetina15();//12
 
+        listDisplayed.addToCompare15(); //13 //dodelat xpath
 
+        listDisplayed.listContainsApp15(); //14
 
+        listDisplayed.getAppleRetinaInCompare(); //15 compareIcon
 
+        elementsExist.pageContainsCompare(); //16
+
+        elementsExist.pageContainsLaptops();//17
+        elementsExist.pageContainsLaptops2();//17
     }
 }
