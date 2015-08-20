@@ -39,10 +39,10 @@ public class TestBase {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
-  //  @AfterSuite
-   // public void tearDown() {
-       // driver.quit();
-   // }
+    @AfterSuite
+    public void tearDown() {
+        driver.quit();
+    }
 }
 
 
