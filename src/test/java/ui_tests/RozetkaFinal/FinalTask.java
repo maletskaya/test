@@ -49,12 +49,12 @@ public class FinalTask extends TestBase {
 
         listDisplayed.getAppleRetina13(); //9
 
-        listDisplayed.addToCompare13(); //10  dodelat xpath
+        listDisplayed.addToCompare13(); //10
         listDisplayed.listContainsAppl13(); //11
 
         listDisplayed.getAppleRetina15();//12
 
-        listDisplayed.addToCompare15(); //13 //dodelat xpath
+        listDisplayed.addToCompare15(); //13
 
         listDisplayed.listContainsApp15(); //14
 
