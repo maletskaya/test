@@ -62,13 +62,13 @@ public class RozetkaApplePage extends TestBase {
     }
 
     public void addToCompare13() {
-        addtoCompare13 = driver.findElement(By.xpath(".//*[@id='block_with_goods']/div[1]/div[3]/div[1]/div/div/div/div[6]/ul/li[2]/div/label/span/img"));
+        addtoCompare13 = driver.findElement(By.xpath(".//a[contains(.,'Z0QN000NJ')]/../../div//img[@class='sprite g-compare-icon']"));
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         addtoCompare13.click();
     }
 
     public void addToCompare15() {
-        addtoCompare15 = driver.findElement(By.xpath(".//*[@id='block_with_goods']/div[1]/div[23]/div[1]/div/div/div/div[7]/div[2]/label/span/img"));
+        addtoCompare15 = driver.findElement(By.xpath(".//a[contains(.,'MGXA2UA/A')]/../../div//img[@class='sprite g-compare-icon']"));
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         addtoCompare15.click();
     }
